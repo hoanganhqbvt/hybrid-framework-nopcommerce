@@ -15,8 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	private WebDriver driver;
 	protected WebDriver getBrowserDriver(String browserName) {
-		
-		
+				
 		if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
