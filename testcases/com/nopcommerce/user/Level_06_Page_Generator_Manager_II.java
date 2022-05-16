@@ -2,9 +2,9 @@ package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
 
-import pageObjects.nopCommerce.HomePageObject;
-import pageObjects.nopCommerce.LoginPageObject;
-import pageObjects.nopCommerce.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserLoginPageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 import org.testng.annotations.BeforeClass;
 import java.util.Random;
@@ -18,9 +18,9 @@ public class Level_06_Page_Generator_Manager_II {
 	private WebDriver driver;
 	private String firstName, lastName, invalidEmail, notFoundEmail, existingEmail, validPassword, incorrectPassword;
 	private String projectPath = System.getProperty("user.dir");
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
   @BeforeClass
   public void beforeClass() {
 	  System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
@@ -28,7 +28,7 @@ public class Level_06_Page_Generator_Manager_II {
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	  driver.get("https://demo.nopcommerce.com/");
 	  
-	  homePage = new HomePageObject(driver);
+	  homePage = new UserHomePageObject(driver);
 	  
 	  firstName = "Automation";
 	  lastName = "FC";	  

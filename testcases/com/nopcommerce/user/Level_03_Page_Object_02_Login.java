@@ -2,9 +2,9 @@ package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
 
-import pageObjects.nopCommerce.HomePageObject;
-import pageObjects.nopCommerce.LoginPageObject;
-import pageObjects.nopCommerce.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserLoginPageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 import org.testng.annotations.BeforeClass;
 import java.util.Random;
@@ -18,9 +18,9 @@ public class Level_03_Page_Object_02_Login {
 	private WebDriver driver;
 	private String firstName, lastName, invalidEmail, notFoundEmail, existingEmail, validPassword, incorrectPassword;
 	private String projectPath = System.getProperty("user.dir");
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
   @BeforeClass
   public void beforeClass() {
 	  System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
@@ -28,8 +28,8 @@ public class Level_03_Page_Object_02_Login {
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	  driver.get("https://demo.nopcommerce.com/");
 	  
-	  homePage = new HomePageObject(driver);
-	  registerPage = new RegisterPageObject(driver);
+	  homePage = new UserHomePageObject(driver);
+	  registerPage = new UserRegisterPageObject(driver);
 	  firstName = "Automation";
 	  lastName = "FC";	  
 	  invalidEmail = "afc@afc.com@.vn";
@@ -40,7 +40,7 @@ public class Level_03_Page_Object_02_Login {
 	  System.out.println("Pre-condition - Step 01: Click to Register link");
 	  homePage.clickToRegisterLink();
 	// Click to Register link -> nhảy qua trang Register -> phải khởi tạo RegisterPageObject
-	  registerPage = new RegisterPageObject(driver);
+	  registerPage = new UserRegisterPageObject(driver);
 		  
 	  System.out.println("Pre-condition- Step 02: Input to required fields");
 	  registerPage.inputToFirstnameTextbox(firstName);
@@ -58,14 +58,14 @@ public class Level_03_Page_Object_02_Login {
 	  System.out.println("Pre-condition - Step 05: Click to logout link");
 	  registerPage.clickToLogoutLink();
 	  // Click logout thì sẽ quay về trang HomePage, khởi tạo lại homePage object
-	  homePage = new HomePageObject(driver);
+	  homePage = new UserHomePageObject(driver);
   }
 
   @Test
   public void Login_01_Empty_Data() {
 	  homePage.clickToLoginLink();
 	  // click to Login link -> chuyển qua loginPage
-	  loginPage = new LoginPageObject(driver);
+	  loginPage = new UserLoginPageObject(driver);
 	  loginPage.clickToLoginButton();
 	  
 	  Assert.assertEquals(loginPage.getErrorMessageAtEmailTextbox(), "Please enter your email");
@@ -74,7 +74,7 @@ public class Level_03_Page_Object_02_Login {
   public void Login_02_Invalid_Email() {
 	  homePage.clickToLoginLink();
 	  // click to Login link -> chuyển qua loginPage
-	  loginPage = new LoginPageObject(driver);
+	  loginPage = new UserLoginPageObject(driver);
 	  
 	  loginPage.inputToEmailTextbox(invalidEmail);
 	  loginPage.clickToLoginButton();
@@ -84,7 +84,7 @@ public class Level_03_Page_Object_02_Login {
   public void Login_03_Email_Not_Found() {	    
 	  homePage.clickToLoginLink();
 	  // click to Login link -> chuyển qua loginPage
-	  loginPage = new LoginPageObject(driver);
+	  loginPage = new UserLoginPageObject(driver);
 	  
 	  loginPage.inputToEmailTextbox(notFoundEmail);
 	  loginPage.clickToLoginButton();
@@ -96,7 +96,7 @@ public class Level_03_Page_Object_02_Login {
   public void Login_04_Existing_Email_Empty_Password() {
 	  homePage.clickToLoginLink();
 	  // click to Login link -> chuyển qua loginPage
-	  loginPage = new LoginPageObject(driver);
+	  loginPage = new UserLoginPageObject(driver);
 	  
 	  loginPage.inputToEmailTextbox(existingEmail);
 	  loginPage.inputToPasswordTextbox("");
@@ -109,7 +109,7 @@ public class Level_03_Page_Object_02_Login {
   public void Login_05_Existing_Email_Wrong_Password() {
 	  homePage.clickToLoginLink();
 	  // click to Login link -> chuyển qua loginPage
-	  loginPage = new LoginPageObject(driver);
+	  loginPage = new UserLoginPageObject(driver);
 	  
 	  loginPage.inputToEmailTextbox(existingEmail);
 	  loginPage.inputToPasswordTextbox(incorrectPassword);
@@ -125,14 +125,14 @@ public class Level_03_Page_Object_02_Login {
   public void Login_06_Existing_Email_Correct_Password() {
 	  homePage.clickToLoginLink();
 	  // click to Login link -> chuyển qua loginPage
-	  loginPage = new LoginPageObject(driver);
+	  loginPage = new UserLoginPageObject(driver);
 	  
 	  loginPage.inputToEmailTextbox(existingEmail);
 	  loginPage.inputToPasswordTextbox(validPassword);
 	  loginPage.clickToLoginButton();
 	  
 	  // Login thành công -> quay lại HomePage
-	  homePage = new HomePageObject(driver);
+	  homePage = new UserHomePageObject(driver);
 	  Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 	  homePage.clickToMyAccountLink();
   }

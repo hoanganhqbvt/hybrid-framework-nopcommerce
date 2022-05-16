@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import pageFactory.nopCommerce.LoginPageObject;
 import pageFactory.nopCommerce.RegisterPageObject;
-import pageObjects.nopCommerce.HomePageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -18,16 +18,17 @@ import org.testng.annotations.AfterClass;
 public class Level_05_Page_Factory extends BaseTest {	
 	private WebDriver driver;
 	private String firstName, lastName, invalidEmail, notFoundEmail, existingEmail, validPassword, incorrectPassword;
-	private HomePageObject homePage;
+	private UserHomePageObject homePage;
 	private RegisterPageObject registerPage;
 	private LoginPageObject loginPage;
 	
 	@Parameters("browser")
 	@BeforeClass
-  public void beforeClass(String browserName) {
-	  driver = getBrowserDriver(browserName);
+  public void beforeClass(String browserName, String environmentName) {
+		environmentName = "DEV";
+	  driver = getBrowserDriver(browserName, environmentName);
 	  
-	  homePage = new HomePageObject(driver);
+	  homePage = new UserHomePageObject(driver);
 	  registerPage = new RegisterPageObject(driver);
 	  firstName = "Automation";
 	  lastName = "FC";	  
@@ -57,7 +58,7 @@ public class Level_05_Page_Factory extends BaseTest {
 	  System.out.println("Pre-condition - Step 05: Click to logout link");
 	  registerPage.clickToLogoutLink();
 	  // Click logout thì sẽ quay về trang HomePage, khởi tạo lại homePage object
-	  homePage = new HomePageObject(driver);
+	  homePage = new UserHomePageObject(driver);
   }
 
   @Test
@@ -131,7 +132,7 @@ public class Level_05_Page_Factory extends BaseTest {
 	  loginPage.clickToLoginButton();
 	  
 	  // Login thành công -> quay lại HomePage
-	  homePage = new HomePageObject(driver);
+	  homePage = new UserHomePageObject(driver);
 	  Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 	  homePage.clickToMyAccountLink();
   }

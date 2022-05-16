@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite  name="NopCommerce">
+<suite  name="LiveGuru">
 
    <test name="Run on firefox">
   <parameter name = "browser" value="firefox" />
  <classes>
-      <class name="com.liveguru.user.Level_06_Page_Generator_Manager_III"/>
+      <class name="com.liveguru.admin.Level_10_Data_Table"/>
  </classes>
   </test> 
 

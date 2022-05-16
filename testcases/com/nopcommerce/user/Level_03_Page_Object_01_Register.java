@@ -2,8 +2,8 @@ package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
 
-import pageObjects.nopCommerce.HomePageObject;
-import pageObjects.nopCommerce.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 import org.testng.annotations.BeforeClass;
 import java.util.Random;
@@ -17,8 +17,8 @@ public class Level_03_Page_Object_01_Register {
 	private WebDriver driver;
 	private String firstName, lastName, emailAddress, password;
 	private String projectPath = System.getProperty("user.dir");
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 	
   @BeforeClass
   public void beforeClass() {
@@ -27,7 +27,7 @@ public class Level_03_Page_Object_01_Register {
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	  driver.get("https://demo.nopcommerce.com/");
 	  // Mở URL lên qua trang HomePage
-	  homePage = new HomePageObject(driver);
+	  homePage = new UserHomePageObject(driver);
 	  
 	  firstName = "Automation";
 	  lastName = "FC";	  
@@ -41,7 +41,7 @@ public class Level_03_Page_Object_01_Register {
 	  System.out.println("Home Page - Step 01: Click to Register link");
 	  homePage.clickToRegisterLink();
 	  // Click to Register link -> nhảy qua trang Register -> phải khởi tạo RegisterPageObject
-	  registerPage = new RegisterPageObject(driver);
+	  registerPage = new UserRegisterPageObject(driver);
 	  
 	  System.out.println("Home Page - Step 02: Click to Register button");
 	  registerPage.clickToRegisterButton();
@@ -62,7 +62,7 @@ public class Level_03_Page_Object_01_Register {
 	  homePage.clickToRegisterLink();
 	  
 	// Click to Register link -> nhảy qua trang Register -> phải khởi tạo RegisterPageObject
-	  registerPage = new RegisterPageObject(driver);
+	  registerPage = new UserRegisterPageObject(driver);
 		  
 	  System.out.println("Home Page - Step 02: Input to required fields");
 	  registerPage.inputToFirstnameTextbox(firstName);
@@ -83,7 +83,7 @@ public class Level_03_Page_Object_01_Register {
 	  System.out.println("Home Page - Step 01: Click to Register link");
 	  homePage.clickToRegisterLink();
 	// Click to Register link -> nhảy qua trang Register -> phải khởi tạo RegisterPageObject
-	  registerPage = new RegisterPageObject(driver);
+	  registerPage = new UserRegisterPageObject(driver);
 		  
 	  System.out.println("Home Page - Step 02: Input to required fields");
 	  registerPage.inputToFirstnameTextbox(firstName);
@@ -108,7 +108,7 @@ public class Level_03_Page_Object_01_Register {
 	  System.out.println("Home Page - Step 01: Click to Register link");
 	  homePage.clickToRegisterLink();
 	// Click to Register link -> nhảy qua trang Register -> phải khởi tạo RegisterPageObject
-	  registerPage = new RegisterPageObject(driver);
+	  registerPage = new UserRegisterPageObject(driver);
 
 	  System.out.println("Home Page - Step 02: Input to required fields");
 	  registerPage.inputToFirstnameTextbox(firstName);
@@ -130,7 +130,7 @@ public class Level_03_Page_Object_01_Register {
 	  System.out.println("Home Page - Step 01: Click to Register link");
 	  homePage.clickToRegisterLink();	  
 	// Click to Register link -> nhảy qua trang Register -> phải khởi tạo RegisterPageObject
-	  registerPage = new RegisterPageObject(driver);
+	  registerPage = new UserRegisterPageObject(driver);
 	  
 	  System.out.println("Home Page - Step 02: Input to required fields");
 	  registerPage.inputToFirstnameTextbox(firstName);
@@ -153,7 +153,7 @@ public class Level_03_Page_Object_01_Register {
 	  System.out.println("Home Page - Step 01: Click to Register link");
 	  homePage.clickToRegisterLink();	  
 	// Click to Register link -> nhảy qua trang Register -> phải khởi tạo RegisterPageObject
-	  registerPage = new RegisterPageObject(driver);
+	  registerPage = new UserRegisterPageObject(driver);
 	  
 	  System.out.println("Home Page - Step 02: Input to required fields");
 	  registerPage.inputToFirstnameTextbox(firstName);
