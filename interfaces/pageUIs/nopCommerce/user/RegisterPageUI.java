@@ -16,5 +16,9 @@ public class RegisterPageUI {
 	public static final String LOGOUT_LINK = "xpath=//a[@class='ico-logout']";
 	public static final String EXISTING_EMAIL_ERROR_MESSAGE = "xpath=//div[contains(@class,'message-error')]//li";
 	
+	// Pattern Oject
+	public static final String DYNAMIC_TEXTBOX_BY_ID = "xpath=//input[@id='%s']";
+	public static final String DYNAMIC_RADIO_BUTTON_BY_TEXT = "xpath=//label[text()='%s']/preceding-sibling::input]";
+	
 	
 }

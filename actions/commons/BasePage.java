@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -24,9 +23,9 @@ import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
 import pageUIs.jQuery.dataTable.BasePageJQueryUI;
-import pageUIs.jQuery.uploadFile.HomePageUploadFileUI;
 import pageUIs.nopCommerce.user.BasePageNopcommerceUI;
 import pageUIs.nopCommerce.user.HomePageUI;
+import pageUIs.orangeHRM.admin.BasePageOrangeHRMUI;
 
 
 public class BasePage {
@@ -161,11 +160,12 @@ public class BasePage {
 	private String getDynamicXpath(String locatorType, String... dynamicValues) {	
 		if(locatorType.startsWith("xpath=") || locatorType.startsWith("Xpath=") || locatorType.startsWith("XPATH=") 
 				|| locatorType.startsWith("XPath=")) {
-		locatorType = String.format(locatorType, (Object[]) dynamicValues);
+			locatorType = String.format(locatorType, (Object[]) dynamicValues);
 		}
 		return locatorType;
 		
 	}
+	
 	
 	private WebElement getWebElement(WebDriver driver, String locatorType) {
 		return driver.findElement(getByLocator(locatorType));
@@ -227,8 +227,26 @@ public class BasePage {
 		sleepInSecond(1);
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByLocator(childXpath)));
-		List <WebElement> allItems = driver.findElements(By.xpath(childXpath));
-		System.out.println("Item szixe = " + allItems.size());
+		List <WebElement> allItems = driver.findElements(getByLocator(childXpath));
+		System.out.println("Item size = " + allItems.size());
+		for (WebElement item : allItems) {
+			if(item.getText().trim().equals(expectedTextItem)) {			
+				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true)", item);
+				sleepInSecond(1);
+				item.click();
+				break;
+			}
+		}
+	}
+	public void selectItemInCustomDropdown(WebDriver driver, String parentXpath, String childXpath, String expectedTextItem, String...jobDropdownLabel) {
+		
+		getWebElement(driver, parentXpath, jobDropdownLabel).click();
+		sleepInSecond(1);
+		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		explicitWait.until(ExpectedConditions.visibilityOfAllElements(getListWebElement(driver, getDynamicXpath(childXpath, jobDropdownLabel))));
+		List <WebElement> allItems = getListWebElement(driver, getDynamicXpath(childXpath, jobDropdownLabel));
+		System.out.println("Item size = " + allItems.size());
 		for (WebElement item : allItems) {
 			if(item.getText().trim().equals(expectedTextItem)) {			
 			JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -254,10 +272,15 @@ public class BasePage {
 	public String getElementText(WebDriver driver, String locatorType) {
 		return	getWebElement(driver, locatorType).getText();
 		}	
-	public String getElementText(WebDriver driver, String locatorType, String dynamicValues) {
+	public String getElementText(WebDriver driver, String locatorType, String...dynamicValues) {
 		return	getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).getText();
 		}
+	
+	public void inputToTextboxByID(WebDriver driver, String locatorType, String value, String textboxID) {
+		waitForElementVisible(driver, locatorType, textboxID);
+		sendkeyToElement(driver, locatorType, value, textboxID);
 		
+	}
 	public String getElementCssValue(WebDriver driver, String locatorType, String propertyName) {
 			return getWebElement(driver, locatorType).getCssValue(propertyName);
 		}
@@ -554,8 +577,22 @@ public class BasePage {
 		 }
 	 }
 	 public void openPageAtMyAccountByPageName(WebDriver driver, String pageName) {
-	 waitForElementClickable(driver, BasePageNopcommerceUI.DYNAMIC_PAGE_AT_MY_ACCOUNT_AREA, pageName);
-	 clickToElement(driver, BasePageNopcommerceUI.DYNAMIC_PAGE_AT_MY_ACCOUNT_AREA, pageName);
+		 waitForElementClickable(driver, BasePageNopcommerceUI.DYNAMIC_PAGE_AT_MY_ACCOUNT_AREA, pageName);
+		 clickToElement(driver, BasePageNopcommerceUI.DYNAMIC_PAGE_AT_MY_ACCOUNT_AREA, pageName);
+	 }
+	 
+	 public void openPageAtEmployeeDetailByPageName(WebDriver driver, String pageName) {
+		 JavascriptExecutor js = (JavascriptExecutor) driver;	
+		 js.executeScript("window.scrollBy(0,-250)");	 
+		 waitForElementClickable(driver, BasePageOrangeHRMUI.DYNAMIC_PAGE_AT_EMPLOYEE_DETAIL, pageName);
+		 clickToElement(driver, BasePageOrangeHRMUI.DYNAMIC_PAGE_AT_EMPLOYEE_DETAIL, pageName);
+	 }
+	 
+	 public void openTabOnPIMPageByName(WebDriver driver, String tabName) {
+	 JavascriptExecutor js = (JavascriptExecutor) driver;	
+	 js.executeScript("window.scrollBy(0,-250)");	 
+	 waitForElementClickable(driver, BasePageOrangeHRMUI.DYNAMIC_TAB_ON_PIM_PAGE_BY_NAME, tabName);
+	 clickToElement(driver, BasePageOrangeHRMUI.DYNAMIC_TAB_ON_PIM_PAGE_BY_NAME, tabName);
 	 }
 	 
 	 private long longTimeout = GlobalConstants.LONG_TIMEOUT;

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite  name="NopCommerce">
+<suite  name="OrangeHRM">
 
 <listeners>
 <listener class-name="commons.MethodListener"/>
-<listener class-name="reportConfig2.ExtentTestListenerV5"/>
+<listener class-name="reportConfig2.ReportNGListener"/>
 <listener class-name="org.uncommons.reportng.HTMLReporter"/>
 <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
 </listeners>
    <test name="Run on firefox">
 
-<parameter name ="url" value = "https://demo.nopcommerce.com/" />
+<parameter name ="url" value = "https://opensource-demo.orangehrmlive.com/" />
   <parameter name = "browser" value="firefox" />
  <classes>
-      <class name="com.nopcommerce.user.Level_17_Pattern_Object"/>
+      <class name="com.orangehrm.admin.Employee"/>
  </classes>
   </test> 
 

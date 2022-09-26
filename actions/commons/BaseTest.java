@@ -1,5 +1,6 @@
 package commons;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -193,5 +194,9 @@ public class BaseTest {
 		}
 		return pass;
 	}
+	public int generateFakeNumber() {
+		 Random randomNumber = new Random();
+		 return randomNumber.nextInt(9999);
+	 }
 	
 }
