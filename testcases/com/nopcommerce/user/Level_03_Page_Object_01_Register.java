@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
+
 import org.testng.annotations.BeforeClass;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;

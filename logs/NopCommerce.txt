@@ -1,112 +1,106 @@
-[INFO ] [2022-09-26 11:13:32,698] Pre-condition - Step 01: Open browser and access URL
-[INFO ] [2022-09-26 11:13:53,754] Pre-condition - Step 02: Input admin username with value is: Admin
-[INFO ] [2022-09-26 11:13:54,427] Pre-condition - Step 03: Input admin password with value is: admin123
-[INFO ] [2022-09-26 11:13:54,552] Pre-condition - Step 04: Click on Login button
-[INFO ] [2022-09-26 11:13:57,152] Add New Employee - Step 01: Click on 'Add' button 
-[INFO ] [2022-09-26 11:13:58,610] Add New Employee - Step 02: Input firstname with value is: Employee7283
-[INFO ] [2022-09-26 11:13:58,891] Add New Employee - Step 03: Input middlename with value is: Mid
-[INFO ] [2022-09-26 11:13:58,979] Add New Employee - Step 04: Input lastname with value is: LastName
-[INFO ] [2022-09-26 11:14:01,071] Add New Employee - Step 05: Input employee ID with value is: ID7283
-[INFO ] [2022-09-26 11:14:01,190] Add New Employee - Step 06: Click on Create Login Detail button
-[INFO ] [2022-09-26 11:14:01,480] Add New Employee - Step 07: Input to Username textbox with value is :User7283
-[INFO ] [2022-09-26 11:14:01,576] Add New Employee - Step 08: Input to password textbox with value is :Abcde@7283
-[INFO ] [2022-09-26 11:14:01,651] Add New Employee - Step 09: Input to Confirm password textbox with value is :Abcde@7283
-[INFO ] [2022-09-26 11:14:01,719] Add New Employee - Step 10: Click to Save button
-[INFO ] [2022-09-26 11:14:02,003] Add New Employee - Step 11: Verify the success message displayed
-[INFO ] [2022-09-26 11:14:03,072]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:14:08,129] Upload_Avatar - Step 01: Click on Avatar icon
-[INFO ] [2022-09-26 11:14:08,759] Upload_Avatar - Step 02: Upload avatar image
-[INFO ] [2022-09-26 11:14:09,183] Upload_Avatar - Step 03: Verify uploaded avatar success message displayed
-[INFO ] [2022-09-26 11:14:10,574]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:14:10,582] Personal_Detail - Step 01: Click on Personal Detail link
-[INFO ] [2022-09-26 11:14:14,328] Personal_Detail - Step 02: Input Driver license with value is DV7283
-[INFO ] [2022-09-26 11:14:14,433] Personal_Detail - Step 03: Input SSN number with value is SSN7283
-[INFO ] [2022-09-26 11:14:14,515] Personal_Detail - Step 04: Input SIN number with value is SIN7283
-[INFO ] [2022-09-26 11:14:14,587] Personal_Detail - Step 06: Select Gender is Male
-[INFO ] [2022-09-26 11:14:14,856] Personal_Detail - Step 08: Input expire Driver license date with value is 2025-08-20
-[INFO ] [2022-09-26 11:14:14,952] Personal_Detail - Step 09: Input DOB with value is 1990-10-20
-[INFO ] [2022-09-26 11:14:15,034] Personal_Detail - Step 10: Select Nationality with value is American
-[INFO ] [2022-09-26 11:14:17,842] Personal_Detail - Step 11:  Select Marital status with value is Married
-[INFO ] [2022-09-26 11:14:20,469] Personal_Detail - Step 12: Click on Save required fields button
-[INFO ] [2022-09-26 11:14:20,812] Personal_Detail - Step 13: Verify updated Required Personal detail success message displayed
-[INFO ] [2022-09-26 11:14:21,121]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:14:21,121] Personal_Detail - Step 14: Select Blood type with value is A+
-[INFO ] [2022-09-26 11:14:23,685] Personal_Detail - Step 15: Click on Save custom fields button
-[INFO ] [2022-09-26 11:14:23,975] Personal_Detail - Step 16: Verify updated Custom Personal detail success message displayed
-[INFO ] [2022-09-26 11:14:24,287]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:14:24,291] Contact_Detail - Step 01: Click on Contact Detail link
-[INFO ] [2022-09-26 11:14:30,184] Contact_Detail - Step 02: Input address Street 1 with value is: street17283
-[INFO ] [2022-09-26 11:14:30,313] Contact_Detail - Step 03: Input address Street 2 with value is: street27283
-[INFO ] [2022-09-26 11:14:30,380] Contact_Detail - Step 04: Input address State/Province with value is: Binh Duong
-[INFO ] [2022-09-26 11:14:30,448] Contact_Detail - Step 05: Input address Zip/Postal code with value is: 72000
-[INFO ] [2022-09-26 11:14:30,513] Contact_Detail - Step 06: Select country from dropdown list with value is: Viet Nam
-[INFO ] [2022-09-26 11:14:34,996] Contact_Detail - Step 07: Input Telephone  Home with number is: 0274382123
-[INFO ] [2022-09-26 11:14:35,093] Contact_Detail - Step 08: Input Telephone Mobile with number is: 0917382666
-[INFO ] [2022-09-26 11:14:35,159] Contact_Detail - Step 09: Input Telephone Work with number is: 0228382123
-[INFO ] [2022-09-26 11:14:35,230] Contact_Detail - Step 10: Click on Save button
-[INFO ] [2022-09-26 11:14:35,482] Contact_Detail - Step 11: Verify success saved contact detail info message displayed with text 'Successfully Updated'
-[INFO ] [2022-09-26 11:14:36,307]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:14:41,324] Emergency_Detail - Step 01: Open Emergency Detail page
-[INFO ] [2022-09-26 11:14:41,991] Emergency_Detail - Step 02: Click on '+ Add' button
-[INFO ] [2022-09-26 11:14:42,423] Emergency_Detail - Step 03: Input to Name textbox with name is: emergencyName
-[INFO ] [2022-09-26 11:14:42,527] Emergency_Detail - Step 04: Input to Relationship textbox with value is: Em
-[INFO ] [2022-09-26 11:14:42,592] Emergency_Detail - Step 05: Input to Home telephone textbox with value is: 02381234567
-[INFO ] [2022-09-26 11:14:42,695] Emergency_Detail - Step 06: Input to Mobile phone textbox with value is: 0917382111
-[INFO ] [2022-09-26 11:14:42,762] Emergency_Detail - Step 07: Input to Work telephone textbox with value is: 02382345678
-[INFO ] [2022-09-26 11:14:42,832] Emergency_Detail - Step 08: Click on Save button
-[INFO ] [2022-09-26 11:14:43,118] Emergency_Detail - Step 09: Verify success saved Emergency detail info message displayed with text 'Successfully Saved'
-[INFO ] [2022-09-26 11:14:43,784]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:14:43,789] Assigned_Dependents - Step 01: Open Dependents page
-[INFO ] [2022-09-26 11:14:45,715] Assigned_Dependents - Step 02: Click on Add dependent button
-[INFO ] [2022-09-26 11:14:46,222] Assigned_Dependents - Step 03: Input to Dependent Name textbox with value is: Dependent7283
-[INFO ] [2022-09-26 11:14:46,314] Assigned_Dependents - Step 04: Select Dependent Relationship in dropdown list with value is: Child
-[INFO ] [2022-09-26 11:14:48,920] Assigned_Dependents - Step 05: Input to Dependent DOB with value is 2017-10-09
-[INFO ] [2022-09-26 11:14:49,004] Assigned_Dependents - Step 06: Click on Save button
-[INFO ] [2022-09-26 11:14:49,288] Assigned_Dependents - Step 07: Verify success added dependent massge displayed with value is 'Successfully Saved'
-[INFO ] [2022-09-26 11:14:49,537]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:14:49,540] Edit_View_Job - Step 01: Open Job page
-[INFO ] [2022-09-26 11:14:50,427] Edit_View_Job - Step 02: Input to Joined Date textbox with value is: 2021-12-15
-[INFO ] [2022-09-26 11:14:53,541] Edit_View_Job - Step 03: Select Job title in dropdown list with value is: QA Lead
-[INFO ] [2022-09-26 11:14:56,793] Edit_View_Job - Step 04: Select Job Category in dropdown list with value is: Professionals
-[INFO ] [2022-09-26 11:14:59,685] Edit_View_Job - Step 05: Select Job Sub Unit in dropdown list with value is: Quality Assurance
-[INFO ] [2022-09-26 11:15:02,544] Edit_View_Job - Step 06: Select Job status in dropdown list with value is: Full-Time Permanent
-[INFO ] [2022-09-26 11:15:05,301] Edit_View_Job - Step 07: Select Job location in dropdown list with value is: New York Sales Office
-[INFO ] [2022-09-26 11:15:08,017] Edit_View_Job - Step 08: Click on Save button
-[INFO ] [2022-09-26 11:15:08,345] Edit_View_Job - Step 09: Verify success added job message displayed with text 'Successfully Saved'
-[INFO ] [2022-09-26 11:15:09,069]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:15:09,072] Edit_View_Salary - Step 01: Open Salary page
-[INFO ] [2022-09-26 11:15:10,119] Edit_View_Salary - Step 02: Click on Add button
-[INFO ] [2022-09-26 11:15:11,371] Edit_View_Salary - Step 03: Input to Salary component textbox with value is: Main Income
-[INFO ] [2022-09-26 11:15:11,481] Edit_View_Salary - Step 04: Input to Salary Amount textbox with value is: 10000
-[INFO ] [2022-09-26 11:15:11,541] Edit_View_Salary - Step 05: Select Pay Grade option in dropdown list with value is: Grade 5
-[INFO ] [2022-09-26 11:15:14,282] Edit_View_Salary - Step 06: Select Pay Frequency option in dropdown list with value is: Monthly
-[INFO ] [2022-09-26 11:15:20,091] Edit_View_Salary - Step 07: Select currency option in dropdown list with value is: United States Dollar
-[INFO ] [2022-09-26 11:15:22,717] Edit_View_Salary - Step 08: Click on Save salary button
-[INFO ] [2022-09-26 11:15:23,015] Edit_View_Salary - Step 09: Verify success added salary message displayed with text 'Successfully Saved
-[INFO ] [2022-09-26 11:15:23,302]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:15:23,309] Qualifications - Step 01: Open Qualifications page
-[INFO ] [2022-09-26 11:15:24,218] Qualifications - Step 02: Click on Add Work Experience button
-[INFO ] [2022-09-26 11:15:25,438] Qualifications - Step 03: Input to Company textbox with value is: ACB
-[INFO ] [2022-09-26 11:15:25,547] Qualifications - Step 04: Input to Job Title textbox with value is: QA Lead
-[INFO ] [2022-09-26 11:15:25,627] Qualifications - Step 05: Input to Date From textbox with value is: 2021-12-15
-[INFO ] [2022-09-26 11:15:25,686] Qualifications - Step 06: Input to Date To textbox with value is: 2022-10-15
-[INFO ] [2022-09-26 11:15:25,772] Qualifications - Step 07: Click on Save buton
-[INFO ] [2022-09-26 11:15:26,046] Qualifications - Step 08: Verify success added work experience message dispayed with text 'Successfully Saved'
-[INFO ] [2022-09-26 11:15:28,113]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:15:28,113] Qualifications - Step 09: Verify Company name is displayed correctly after created with value is: ACB
-[INFO ] [2022-09-26 11:15:32,166]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:15:32,166] Qualifications - Step 10: Verify Job Title name is displayed correctly after created with value is: QA Lead
-[INFO ] [2022-09-26 11:15:32,208]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:15:32,208] Qualifications - Step 11: Verify Date From is displayed correctly after created with value is: 2021-12-15
-[INFO ] [2022-09-26 11:15:32,244]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:15:32,244] Qualifications - Step 12: Verify Date To is displayed correctly after created with value is: 2022-10-15
-[INFO ] [2022-09-26 11:15:32,281]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:15:32,283] Search_Employee - Step 01: Open Employee list page
-[INFO ] [2022-09-26 11:15:32,352] Search_Employee - Step 02: Input to Employee Name textbox with value is: Employee7283
-[INFO ] [2022-09-26 11:15:34,623] Search_Employee - Step 03: Select auto suggest result displayed afetr input value to Employee name textbox
-[INFO ] [2022-09-26 11:15:37,114] Search_Employee - Step 05: Click on Search button
-[INFO ] [2022-09-26 11:15:37,514] Search_Employee - Step 06: Verify searched employee displayed that matched search conditions: LastName
-[INFO ] [2022-09-26 11:15:37,911]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:15:37,911] Search_Employee - Step 07: Verify searched employee displayed that matched search conditions: QA Lead
-[INFO ] [2022-09-26 11:15:37,958]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-09-26 11:15:37,958] Search_Employee - Step 08: Verify searched employee displayed that matched search conditions: ID7283
+[INFO ] [2022-10-11 10:08:14,728] Pre-condition - Step 01: Open browser
+[INFO ] [2022-10-11 10:08:37,818] Pre-condition - Step 02: Click to Register link
+[INFO ] [2022-10-11 10:08:39,264] Pre-condition - Step 03: Select gender radio button that is Male
+[INFO ] [2022-10-11 10:08:39,574] Pre-condition - Step 04: Input to Firstname textbox: Automation
+[INFO ] [2022-10-11 10:08:39,685] Pre-condition - Step 05: Input to Lastname textbox: Testing
+[INFO ] [2022-10-11 10:08:39,764] Pre-condition - Step 06: Select a day of birth in Day dropdown list that has value: 20
+[INFO ] [2022-10-11 10:08:40,094] Pre-condition - Step 07: Select a month of birth in Month dropdown list that has value: October
+[INFO ] [2022-10-11 10:08:40,386] Pre-condition - Step 08: Select a year of birth in Year dropdown list that has value: 1990
+[INFO ] [2022-10-11 10:08:40,692] Pre-condition - Step 09: Input to Email textbox: automail1164@gmail.com
+[INFO ] [2022-10-11 10:08:40,786] Pre-condition - Step 10: Input to Password textbox: Abc@123456
+[INFO ] [2022-10-11 10:08:40,863] Pre-condition - Step 11: Input to ConfirmPassword textbox: Abc@123456
+[INFO ] [2022-10-11 10:08:40,934] Pre-condition - Step 12: Click to Register button
+[INFO ] [2022-10-11 10:08:42,334] Pre-condition - Step 13: Verify success registered message displayed correctly with content is 'Your registration completed'
+[INFO ] [2022-10-11 10:08:42,408]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:42,408] Pre-condition - Step 14: Click to My account link
+[INFO ] [2022-10-11 10:08:43,101] MyAccount_01_Update_Customer_Info - Step 01: Change gender to Female
+[INFO ] [2022-10-11 10:08:43,370] MyAccount_01_Update_Customer_Info - Step 02: Change firstname
+[INFO ] [2022-10-11 10:08:43,488] MyAccount_01_Update_Customer_Info - Step 03: Change lastname
+[INFO ] [2022-10-11 10:08:43,586] MyAccount_01_Update_Customer_Info - Step 04: Change day of birth
+[INFO ] [2022-10-11 10:08:43,877] MyAccount_01_Update_Customer_Info - Step 05: Change month of birth
+[INFO ] [2022-10-11 10:08:44,188] MyAccount_01_Update_Customer_Info - Step 06: Change year of birth
+[INFO ] [2022-10-11 10:08:44,473] MyAccount_01_Update_Customer_Info - Step 07: Change email
+[INFO ] [2022-10-11 10:08:44,587] MyAccount_01_Update_Customer_Info - Step 08: Update company name
+[INFO ] [2022-10-11 10:08:44,649] MyAccount_01_Update_Customer_Info - Step 09: Click on Save button
+[INFO ] [2022-10-11 10:08:45,645] MyAccount_01_Update_Customer_Info - Step 10: Verify Firstname is updated correctly
+[INFO ] [2022-10-11 10:08:45,752]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:45,752] MyAccount_01_Update_Customer_Info - Step 11: Verify Lastname is updated correctly
+[INFO ] [2022-10-11 10:08:45,805]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:45,805] MyAccount_01_Update_Customer_Info - Step 12: Verify email is updated correctly
+[INFO ] [2022-10-11 10:08:45,854]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:45,854] MyAccount_01_Update_Customer_Info - Step 13: Verify company is updated correctly
+[INFO ] [2022-10-11 10:08:45,907]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:45,907] MyAccount_01_Update_Customer_Info - Step 14: Verify day of birth is updated correctly
+[INFO ] [2022-10-11 10:08:45,965]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:45,965] MyAccount_01_Update_Customer_Info - Step 15: Verify month of birth is updated correctly
+[INFO ] [2022-10-11 10:08:46,046]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:46,046] MyAccount_01_Update_Customer_Info - Step 16: Verify year of birth is updated correctly
+[INFO ] [2022-10-11 10:08:46,083]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:46,084] MyAccount_01_Update_Customer_Info - Step 14: Verify gender is updated correctly to Female
+[INFO ] [2022-10-11 10:08:46,118]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:46,124] MyAccount_02_Update_Address - Step 01: Click on Address link page
+[INFO ] [2022-10-11 10:08:46,824] MyAccount_02_Update_Address - Step 02: Click on ADD NEW button
+[INFO ] [2022-10-11 10:08:47,538] MyAccount_02_Update_Address - Step 03: Input to Firstname textbox a value is: AddFirstname
+[INFO ] [2022-10-11 10:08:47,637] MyAccount_02_Update_Address - Step 04: Input to Lastname textbox a value is: AddLastname
+[INFO ] [2022-10-11 10:08:47,724] MyAccount_02_Update_Address - Step 05: Input to Email textbox a value is: automail1164@gmail.com
+[INFO ] [2022-10-11 10:08:47,814] MyAccount_02_Update_Address - Step 06: Input to Company textbox a value is: ACB
+[INFO ] [2022-10-11 10:08:47,873] MyAccount_02_Update_Address - Step 07: Select a country in dropdown list with value is: United States
+[INFO ] [2022-10-11 10:08:48,180] MyAccount_02_Update_Address - Step 08: Select State/province in dropdown list with value is: California
+[INFO ] [2022-10-11 10:08:48,603] MyAccount_02_Update_Address - Step 09: Input to City textbox a value is: Oakland
+[INFO ] [2022-10-11 10:08:48,678] MyAccount_02_Update_Address - Step 10: Input to Address 1 textbox a value is: 123 No Street
+[INFO ] [2022-10-11 10:08:48,754] MyAccount_02_Update_Address - Step 11: Input to Address 2 textbox a value is: 789 Highway
+[INFO ] [2022-10-11 10:08:48,840] MyAccount_02_Update_Address - Step 12: Input to Zip/postal code textbox a value is: 123456
+[INFO ] [2022-10-11 10:08:48,903] MyAccount_02_Update_Address - Step 13: Input to Phone textbox a value is: 0987654321
+[INFO ] [2022-10-11 10:08:48,970] MyAccount_02_Update_Address - Step 14: Input to Fax textbox a value is: 0123456789
+[INFO ] [2022-10-11 10:08:49,038] MyAccount_02_Update_Address - Step 15: Click on Save button
+[INFO ] [2022-10-11 10:08:49,925] MyAccount_02_Update_Address - Step 16: Verify Address's name Info is correct
+[INFO ] [2022-10-11 10:08:49,994]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:49,994] MyAccount_02_Update_Address - Step 17: Verify Address's emai Info is correct
+[INFO ] [2022-10-11 10:08:50,032]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:50,071] MyAccount_02_Update_Address - Step 18: Verify Address's phone Info is correct
+[INFO ] [2022-10-11 10:08:50,113]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:50,113] MyAccount_02_Update_Address - Step 19: Verify Address's fax Info is correct
+[INFO ] [2022-10-11 10:08:50,153]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:50,153] MyAccount_02_Update_Address - Step 20: Verify Address's company Info is correct
+[INFO ] [2022-10-11 10:08:50,220]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:50,220] MyAccount_02_Update_Address - Step 21: Verify Address's address1 Info is correct
+[INFO ] [2022-10-11 10:08:50,267]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:50,267] MyAccount_02_Update_Address - Step 22: Verify Address's address2 Info is correct
+[INFO ] [2022-10-11 10:08:50,315]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:50,315] MyAccount_02_Update_Address - Step 23: Verify Address's country Info is correct
+[INFO ] [2022-10-11 10:08:50,382]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:50,382] MyAccount_02_Update_Address - Step 24: Verify Address's city, state, zip Info is correct
+[INFO ] [2022-10-11 10:08:50,444]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:50,448] MyAccount_03_Change_Password - Step 01: Click on Change Password link
+[INFO ] [2022-10-11 10:08:51,091] MyAccount_03_Change_Password - Step 02: Input to Old password textbox
+[INFO ] [2022-10-11 10:08:51,189] MyAccount_03_Change_Password - Step 03: Input to New password textbox
+[INFO ] [2022-10-11 10:08:51,267] MyAccount_03_Change_Password - Step 04: Input to Confirm new password textbox
+[INFO ] [2022-10-11 10:08:51,364] MyAccount_03_Change_Password - Step 05: Click on CHANGE PASSWORD button
+[INFO ] [2022-10-11 10:08:51,900] MyAccount_03_Change_Password - Step 06: Verify the change password success message displayed correctly with content 'Password was changed'
+[INFO ] [2022-10-11 10:08:51,976]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:51,977] MyAccount_03_Change_Password - Step 07: Close change password success message
+[INFO ] [2022-10-11 10:08:54,223] MyAccount_03_Change_Password - Step 08: Click on Logout link
+[INFO ] [2022-10-11 10:08:55,201] MyAccount_03_Change_Password - Step 09: Click on Login link
+[INFO ] [2022-10-11 10:08:56,049] MyAccount_03_Change_Password - Step 10: Input to Email textbox on Login page
+[INFO ] [2022-10-11 10:08:56,146] MyAccount_03_Change_Password - Step 11: Input old password on Login page
+[INFO ] [2022-10-11 10:08:56,216] MyAccount_03_Change_Password - Step 12: Click on Login button
+[INFO ] [2022-10-11 10:08:56,881] MyAccount_03_Change_Password - Step 13: Verify unsucces login message displayed wit correct content 'Login was unsuccessful. Please correct the errors and try again.
+No customer account found
+[INFO ] [2022-10-11 10:08:56,950]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:08:56,950] MyAccount_03_Change_Password - Step 14: Input new password on Login page
+[INFO ] [2022-10-11 10:08:57,028] MyAccount_03_Change_Password - Step 15: Click on Login button
+[INFO ] [2022-10-11 10:08:57,963] MyAccount_03_Change_Password - Step 16: Verify My Account link is displayed
+[INFO ] [2022-10-11 10:08:58,058] MyAccount_04_My_Product_Review - Step 01: Click on a product link to view detail
+[INFO ] [2022-10-11 10:08:59,710] MyAccount_04_My_Product_Review - Step 02: Click on 'Add your review' link
+[INFO ] [2022-10-11 10:09:00,544] MyAccount_04_My_Product_Review - Step 03: Input to Review title textbox
+[INFO ] [2022-10-11 10:09:00,660] MyAccount_04_My_Product_Review - Step 04: Input to Review text area
+[INFO ] [2022-10-11 10:09:00,780] MyAccount_04_My_Product_Review - Step 05: 
+[INFO ] [2022-10-11 10:09:00,871] MyAccount_04_My_Product_Review - Step 06: Click on SUBMIT REVIEW button
+[INFO ] [2022-10-11 10:09:01,400] MyAccount_04_My_Product_Review - Step 07: Verify success added review product message displayed with content is 'Product review is successfully added.'
+[INFO ] [2022-10-11 10:09:01,474]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:09:01,475] MyAccount_04_My_Product_Review - Step 08: Click on My account link
+[INFO ] [2022-10-11 10:09:01,965] MyAccount_04_My_Product_Review - Step 09: Click on My Product Review link
+[INFO ] [2022-10-11 10:09:02,918] MyAccount_04_My_Product_Review - Step 10: Verify review title is correct that equal: My Review Product Title
+[INFO ] [2022-10-11 10:09:02,972]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-11 10:09:02,973] MyAccount_04_My_Product_Review - Step 11: Verify review content is correct that equal: This product is rather good with a reasonable price
+[INFO ] [2022-10-11 10:09:03,006]  -------------------------- PASSED -------------------------- 

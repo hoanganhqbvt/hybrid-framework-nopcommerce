@@ -1,6 +1,7 @@
 package pageObjects.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import commons.BasePage;
 import commons.PageGeneratorManager;
@@ -87,6 +88,35 @@ public class UserRegisterPageObject extends BasePage{
 		waitForElementVisible(driver, RegisterPageUI.EXISTING_EMAIL_ERROR_MESSAGE);
 		return getElementText(driver, RegisterPageUI.EXISTING_EMAIL_ERROR_MESSAGE);
 	}
+	public String getErrorMessageDisplayedNextToRequiredFieldsTextbox(String fieldName) {
+		waitForElementVisible(driver, RegisterPageUI.DYNAMIC_ERROR_MESSAGE_BY_FIELD_NAME, fieldName);
+		return getElementText(driver, RegisterPageUI.DYNAMIC_ERROR_MESSAGE_BY_FIELD_NAME, fieldName);				
+	}
+	public void inputToDynamicTextboxByID(String textboxID, String inputValue) {
+		waitForElementVisible(driver, RegisterPageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		sendkeyToElement(driver, RegisterPageUI.DYNAMIC_TEXTBOX_BY_ID, inputValue, textboxID);
+	}
+	public String getWrongEmailErrorMessage() {
+		waitForElementVisible(driver, RegisterPageUI.EMAIL_ERROR_MESSAGE);
+		return getElementText(driver, RegisterPageUI.EMAIL_ERROR_MESSAGE);
+	}
+	public void selectGenderRadioButton(String radioText, String gender) {
+		waitForElementVisible(driver, RegisterPageUI.DYNAMIC_RADIO_BUTTON_BY_TEXT, radioText);
+		WebElement genderRadioElement = getWebElement(driver, RegisterPageUI.DYNAMIC_RADIO_BUTTON_BY_TEXT, radioText);
+		if(!genderRadioElement.isSelected()){
+			clickToElement(driver, RegisterPageUI.DYNAMIC_RADIO_BUTTON_BY_TEXT, radioText);
+		} 		
+	}
+	public void selectDOBInDropdownListByName(String dropdownName, String inputDOB) {
+		waitForElementVisible(driver, RegisterPageUI.DYNAMIC_DOB_BY_NAME, dropdownName);
+		selectItemInDefaultDropdown(driver, RegisterPageUI.DYNAMIC_DOB_BY_NAME, inputDOB, dropdownName);
+		
+	}
+	public CustomerInfoPO clickToMyaccountLink() {
+		waitForElementVisible(driver, RegisterPageUI.MY_ACCOUNT_LINK);
+		clickToElement(driver, RegisterPageUI.MY_ACCOUNT_LINK);		
+		return PageGeneratorManager.getMyAccountPage(driver);
+	}
 	
-
+	
 }

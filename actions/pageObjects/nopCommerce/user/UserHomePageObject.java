@@ -41,4 +41,21 @@ public class UserHomePageObject extends BasePage {
 			return PageGeneratorManager.getUserMyAccountPage(driver);
 		}
 
+		public void clickToPageLinkByName(String pageName) {
+			waitForElementClickable(driver, HomePageUI.DYNAMIC_PAGE_LINK_BY_NAME, pageName);
+			clickToElement(driver, HomePageUI.DYNAMIC_PAGE_LINK_BY_NAME, pageName);						
+		}
+
+		public void clickToAProductToViewDetail(String productLinkText) {
+			waitForElementVisible(driver, HomePageUI.DYNAMIC_PRODUCT_LINK_BY_TEXT, productLinkText);
+			clickToElement(driver, HomePageUI.DYNAMIC_PRODUCT_LINK_BY_TEXT, productLinkText);	
+			
+		}
+
+		public UserMyProductReviewPageObject clickToAddYourReviewLink() {
+			waitForElementVisible(driver, HomePageUI.ADD_YOUR_REVIEW_LINK);
+			clickToElement(driver, HomePageUI.ADD_YOUR_REVIEW_LINK);
+			return PageGeneratorManager.getUserMyProductReviewPage(driver);
+		}
+
 }

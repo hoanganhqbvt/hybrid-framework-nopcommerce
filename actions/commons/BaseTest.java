@@ -1,8 +1,12 @@
 package commons;
 
+import java.io.File;
+import java.util.Collections;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.collections4.map.HashedMap;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -27,7 +32,13 @@ public class BaseTest {
 		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());	
 		if(browserList == BrowserList.FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			// Add extension for Firefox
+			FirefoxProfile profile = new FirefoxProfile();
+			File adBlock = new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\adblock_for_firefox-5.1.1.xpi");
+			profile.addExtension(adBlock);
+			FirefoxOptions options = new FirefoxOptions();
+			options.setProfile(profile);
+			driver = new FirefoxDriver(options);
 		}
 		else if(browserList == BrowserList.H_FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();
@@ -38,7 +49,18 @@ public class BaseTest {
 			
 		}	else if (browserList == BrowserList.CHROME) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			// Add extension for Chrome
+			File adBlock = new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\extension_5_1_2_0.crx");
+			ChromeOptions options = new ChromeOptions();
+			options.addExtensions(adBlock);
+			options.addArguments("--disable-infobars");
+			options.setExperimentalOption("useAutomationExtension", false);
+			options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+			Map<String, Object> prefs = new HashedMap<String, Object>();
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+			options.setExperimentalOption("prefs", prefs);
+			driver = new ChromeDriver(options);
 		}	else if (browserList == BrowserList.H_CHROME) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions chromeOpt = new ChromeOptions();

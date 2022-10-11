@@ -6,5 +6,5 @@ public static final String CUSTOMER_INFO_LINK = "XPATH=//li[contains(@class,'cus
 public static final String REWARD_POINT_LINK = "XPath=//li[contains(@class,'reward-points')]/a";
 public static final String DYNAMIC_PAGE_AT_MY_ACCOUNT_AREA = "xpath=//div[contains(@class,'account-navigation')]//a[text()='%s']";
 public static final String MY_PRODUCT_REVIEW_LINK = "Xpath=//li[contains(@class,'customer-reviews')]/a";
-
+public static final String DYNAMIC_PAGE_LINK_BY_NAME = "xpath=//a[text()='%s']";
 }

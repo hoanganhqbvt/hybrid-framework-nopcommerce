@@ -44,4 +44,19 @@ public class UserLoginPageObject extends BasePage {
 		inputToPasswordTextbox(password);
 		return clickToLoginButton();
 	}
+
+	public void inputToDynamicTextboxByID(String textboxID , String inputValue ) {
+		waitForElementVisible(driver, LoginPageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		sendkeyToElement(driver, LoginPageUI.DYNAMIC_TEXTBOX_BY_ID, inputValue, textboxID);		
+	}
+
+	public String getErrorMessageByID(String textboxID) {
+		waitForElementVisible(driver, LoginPageUI.DYNAMIC_ERROR_BY_ID, textboxID);
+		return getElementText(driver, LoginPageUI.DYNAMIC_ERROR_BY_ID, textboxID);
+	}
+
+	public String getUnsuccessLoginMessage() {
+		waitForElementVisible(driver, LoginPageUI.UNSUCCESSFULL_ERROR_MESSAGE);
+		return getElementText(driver, LoginPageUI.UNSUCCESSFULL_ERROR_MESSAGE);
+	}
 }

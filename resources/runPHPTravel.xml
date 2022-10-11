@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="PHPTravel">
+
+<listeners>
+<listener class-name="commons.MethodListener"/>
+<listener class-name="reportConfig2.ReportNGListener"/>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+   <test name="Run on Firefox">
+
+<parameter name ="userURL" value = "https://phptravels.net/" />
+  <parameter name = "browser" value="firefox" />
+ <classes>
+      <class name="com.phptravel.user.Register"/>
+ </classes>
+  </test> 
+
+ 
+<!-- <test name="Run on Coc coc">
+  <parameter name = "browser" value="coccoc" />
+ <classes>
+      <class name="com.nopcommerce.user.Level_14_Log_ReportNG "/>
+ </classes>
+  </test> 
+
+ <test name="Run on Chrome">
+  <parameter name = "browser" value="chrome" />
+ <classes>
+      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
+ </classes>
+  </test> -->
+
+ <!--<test name="Run on edge">
+  <parameter name = "browser" value="edge" />
+ <classes>
+      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
+ </classes>
+  </test> -->
+</suite>

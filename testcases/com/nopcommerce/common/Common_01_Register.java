@@ -1,20 +1,15 @@
 package com.nopcommerce.common;
 
-import org.testng.annotations.Test;
+
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
-
-import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
-import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import java.util.Random;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 
 public class Common_01_Register extends BaseTest {
@@ -23,8 +18,7 @@ public class Common_01_Register extends BaseTest {
 	public static String email, password;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
-	private UserLoginPageObject loginPage;
-	private UserCustomerInfoPageObject customerInfoPage;
+
 	
 	@Parameters({"browser", "url"})
 	@BeforeTest

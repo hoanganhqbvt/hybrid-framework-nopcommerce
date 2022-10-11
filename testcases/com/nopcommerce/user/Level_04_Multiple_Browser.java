@@ -5,6 +5,7 @@ import commons.BaseTest;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import java.util.Random;

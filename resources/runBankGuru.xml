@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="BankGuru">
+
+<listeners>
+<listener class-name="commons.MethodListener"/>
+<listener class-name="reportConfig2.ReportNGListener"/>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+   <test name="Run on Chrome">
+
+<parameter name ="registerUrl" value = "https://demo.guru99.com/" />
+<!-- <parameter name ="loginUrl" value = "https://demo.guru99.com/v4" />-->
+  <parameter name = "browser" value="chrome" />
+ <classes>
+      <class name="com.bankguru.user.NewCustomer"/>
+     <!--  <class name="com.bankguru.user.EditCustomer"/> -->
+      <!-- <class name="com.bankguru.user.Payment"/>-->
+ </classes>
+  </test> 
+
+ 
+<!-- <test name="Run on Coc coc">
+  <parameter name = "browser" value="coccoc" />
+ <classes>
+      <class name="com.nopcommerce.user.Level_14_Log_ReportNG "/>
+ </classes>
+  </test> 
+
+ <test name="Run on Chrome">
+  <parameter name = "browser" value="chrome" />
+ <classes>
+      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
+ </classes>
+  </test> -->
+
+ <!--<test name="Run on edge">
+  <parameter name = "browser" value="edge" />
+ <classes>
+      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
+ </classes>
+  </test> -->
+</suite>

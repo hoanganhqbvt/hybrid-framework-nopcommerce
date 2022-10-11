@@ -22,9 +22,11 @@ import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
+import pageUI.bankGuru.user.BasePageBankGuruUI;
 import pageUIs.jQuery.dataTable.BasePageJQueryUI;
 import pageUIs.nopCommerce.user.BasePageNopcommerceUI;
 import pageUIs.nopCommerce.user.HomePageUI;
+import pageUIs.nopCommerce.user.MyAccountPageUI;
 import pageUIs.orangeHRM.admin.BasePageOrangeHRMUI;
 
 
@@ -167,11 +169,11 @@ public class BasePage {
 	}
 	
 	
-	private WebElement getWebElement(WebDriver driver, String locatorType) {
+	public WebElement getWebElement(WebDriver driver, String locatorType) {
 		return driver.findElement(getByLocator(locatorType));
 	}
 	
-	private WebElement getWebElement(WebDriver driver, String locatorType, String...dynamicValues) {
+	public WebElement getWebElement(WebDriver driver, String locatorType, String...dynamicValues) {
 		return driver.findElement(getByLocator(getDynamicXpath(locatorType, dynamicValues)));
 	}
 	
@@ -267,7 +269,11 @@ public class BasePage {
 		}
 		
 	public String getElementAttributeValue(WebDriver driver, String locatorType, String attributeName) {
-			return	getWebElement(driver, locatorType).getAttribute(attributeName);
+		return	getWebElement(driver, locatorType).getAttribute(attributeName);
+	}
+	
+	public String getElementAttributeValue(WebDriver driver, String locatorType, String attributeName, String...dynamicValue) {
+			return	getWebElement(driver, locatorType, dynamicValue).getAttribute(attributeName);
 		}
 	public String getElementText(WebDriver driver, String locatorType) {
 		return	getWebElement(driver, locatorType).getText();
@@ -581,6 +587,11 @@ public class BasePage {
 		 clickToElement(driver, BasePageNopcommerceUI.DYNAMIC_PAGE_AT_MY_ACCOUNT_AREA, pageName);
 	 }
 	 
+	 public void openLinkPageAtHomePageByName(WebDriver driver, String pageName) {
+		 waitForElementClickable(driver, BasePageNopcommerceUI.DYNAMIC_PAGE_LINK_BY_NAME, pageName);
+		 clickToElement(driver, BasePageNopcommerceUI.DYNAMIC_PAGE_LINK_BY_NAME, pageName);
+	 }
+	 
 	 public void openPageAtEmployeeDetailByPageName(WebDriver driver, String pageName) {
 		 JavascriptExecutor js = (JavascriptExecutor) driver;	
 		 js.executeScript("window.scrollBy(0,-250)");	 
@@ -595,6 +606,11 @@ public class BasePage {
 	 clickToElement(driver, BasePageOrangeHRMUI.DYNAMIC_TAB_ON_PIM_PAGE_BY_NAME, tabName);
 	 }
 	 
+	 public void openPageOnManagerPageByName(WebDriver driver, String pageName) {		
+		 waitForElementClickable(driver, BasePageBankGuruUI.DYNAMIC_PAGE_LINK_BY_NAME, pageName);
+		 clickToElement(driver, BasePageBankGuruUI.DYNAMIC_PAGE_LINK_BY_NAME, pageName);		 
+	 }
+		 
 	 private long longTimeout = GlobalConstants.LONG_TIMEOUT;
 	 private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
 }
