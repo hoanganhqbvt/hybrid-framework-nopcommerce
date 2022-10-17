@@ -20,7 +20,9 @@ public class RegisterPageUI {
 	// Pattern Oject
 	public static final String DYNAMIC_TEXTBOX_BY_ID = "xpath=//input[@id='%s']";
 	public static final String DYNAMIC_RADIO_BUTTON_BY_TEXT = "xpath=//label[text()='%s']/preceding-sibling::input";
-	public static final String DYNAMIC_ERROR_MESSAGE_BY_FIELD_NAME = "xpath=//label[text()='%s']/parent::div/span[@class='field-validation-error']/span";
+	public static final String DYNAMIC_ERROR_MESSAGE_BY_FIELD_NAME = "xpath=//label[text()='%s ']/parent::div/span[@class='field-validation-error']/span";
 	public static final String DYNAMIC_DOB_BY_NAME = "xpath=//select[@name='%s']";
+	public static final String DYNAMIC_MENU_HEADER_BY_NAME = "xpath=//ul[@class='top-menu notmobile']//a[text()='%s']";
+	public static final String DYNAMIC_SUBMENU_BY_NAME = "xpath=//ul[@class='top-menu notmobile']//a[text()='%s']/parent::li//a[text()='%s']";
 	
 }

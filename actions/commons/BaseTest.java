@@ -50,9 +50,9 @@ public class BaseTest {
 		}	else if (browserList == BrowserList.CHROME) {
 			WebDriverManager.chromedriver().setup();
 			// Add extension for Chrome
-			File adBlock = new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\extension_5_1_2_0.crx");
+			//File adBlock = new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\extension_5_1_2_0.crx");
 			ChromeOptions options = new ChromeOptions();
-			options.addExtensions(adBlock);
+			//options.addExtensions(adBlock);
 			options.addArguments("--disable-infobars");
 			options.setExperimentalOption("useAutomationExtension", false);
 			options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));

@@ -167,8 +167,7 @@ public class BasePage {
 		return locatorType;
 		
 	}
-	
-	
+		
 	public WebElement getWebElement(WebDriver driver, String locatorType) {
 		return driver.findElement(getByLocator(locatorType));
 	}
@@ -277,10 +276,11 @@ public class BasePage {
 		}
 	public String getElementText(WebDriver driver, String locatorType) {
 		return	getWebElement(driver, locatorType).getText();
-		}	
+	}	
+		
 	public String getElementText(WebDriver driver, String locatorType, String...dynamicValues) {
 		return	getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).getText();
-		}
+	}	
 	
 	public void inputToTextboxByID(WebDriver driver, String locatorType, String value, String textboxID) {
 		waitForElementVisible(driver, locatorType, textboxID);
@@ -386,6 +386,11 @@ public class BasePage {
 	public void hoverMouseToElement(WebDriver driver, String locatorType) {
 		Actions action = new Actions(driver);
 		action.moveToElement(getWebElement(driver, locatorType)).perform();
+	}
+	
+	public void hoverMouseToElement(WebDriver driver, String locatorType, String...dynamicValues) {
+		Actions action = new Actions(driver);
+		action.moveToElement(getWebElement(driver, locatorType, dynamicValues)).perform();
 	}
 	
 	public void pressKeyToElement(WebDriver driver, String locatorType, Keys key) {

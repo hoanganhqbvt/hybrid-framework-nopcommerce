@@ -7,14 +7,17 @@
 <listener class-name="org.uncommons.reportng.HTMLReporter"/>
 <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
 </listeners>
-   <test name="Run on firefox">
+   <test name="Run on Chrome">
 
-<parameter name ="userURL" value = "https://demo.nopcommerce.com/" />
-  <parameter name = "browser" value="firefox" />
+<parameter name ="userURL" value = "https://demo.nopcommerce.com" />
+  <parameter name = "browser" value="chrome" />
  <classes>
      <!--  <class name="com.nopcommerce.user.Register"/>
       <class name="com.nopcommerce.user.Login"/>-->
-      <class name="com.nopcommerce.user.MyAccount"/>
+     <!--  <class name="com.nopcommerce.user.MyAccount"/>-->
+      <!-- <class name="com.nopcommerce.user.Search_Advanced_Search"/>-->
+      <!-- <class name="com.nopcommerce.user.Sort_Display_Paging"/>-->
+      <class name="com.nopcommerce.user.Wishlist_Compare_RecentView"/>
  </classes>
   </test> 
 

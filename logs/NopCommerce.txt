@@ -1,106 +1,31 @@
-[INFO ] [2022-10-11 10:08:14,728] Pre-condition - Step 01: Open browser
-[INFO ] [2022-10-11 10:08:37,818] Pre-condition - Step 02: Click to Register link
-[INFO ] [2022-10-11 10:08:39,264] Pre-condition - Step 03: Select gender radio button that is Male
-[INFO ] [2022-10-11 10:08:39,574] Pre-condition - Step 04: Input to Firstname textbox: Automation
-[INFO ] [2022-10-11 10:08:39,685] Pre-condition - Step 05: Input to Lastname textbox: Testing
-[INFO ] [2022-10-11 10:08:39,764] Pre-condition - Step 06: Select a day of birth in Day dropdown list that has value: 20
-[INFO ] [2022-10-11 10:08:40,094] Pre-condition - Step 07: Select a month of birth in Month dropdown list that has value: October
-[INFO ] [2022-10-11 10:08:40,386] Pre-condition - Step 08: Select a year of birth in Year dropdown list that has value: 1990
-[INFO ] [2022-10-11 10:08:40,692] Pre-condition - Step 09: Input to Email textbox: automail1164@gmail.com
-[INFO ] [2022-10-11 10:08:40,786] Pre-condition - Step 10: Input to Password textbox: Abc@123456
-[INFO ] [2022-10-11 10:08:40,863] Pre-condition - Step 11: Input to ConfirmPassword textbox: Abc@123456
-[INFO ] [2022-10-11 10:08:40,934] Pre-condition - Step 12: Click to Register button
-[INFO ] [2022-10-11 10:08:42,334] Pre-condition - Step 13: Verify success registered message displayed correctly with content is 'Your registration completed'
-[INFO ] [2022-10-11 10:08:42,408]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:42,408] Pre-condition - Step 14: Click to My account link
-[INFO ] [2022-10-11 10:08:43,101] MyAccount_01_Update_Customer_Info - Step 01: Change gender to Female
-[INFO ] [2022-10-11 10:08:43,370] MyAccount_01_Update_Customer_Info - Step 02: Change firstname
-[INFO ] [2022-10-11 10:08:43,488] MyAccount_01_Update_Customer_Info - Step 03: Change lastname
-[INFO ] [2022-10-11 10:08:43,586] MyAccount_01_Update_Customer_Info - Step 04: Change day of birth
-[INFO ] [2022-10-11 10:08:43,877] MyAccount_01_Update_Customer_Info - Step 05: Change month of birth
-[INFO ] [2022-10-11 10:08:44,188] MyAccount_01_Update_Customer_Info - Step 06: Change year of birth
-[INFO ] [2022-10-11 10:08:44,473] MyAccount_01_Update_Customer_Info - Step 07: Change email
-[INFO ] [2022-10-11 10:08:44,587] MyAccount_01_Update_Customer_Info - Step 08: Update company name
-[INFO ] [2022-10-11 10:08:44,649] MyAccount_01_Update_Customer_Info - Step 09: Click on Save button
-[INFO ] [2022-10-11 10:08:45,645] MyAccount_01_Update_Customer_Info - Step 10: Verify Firstname is updated correctly
-[INFO ] [2022-10-11 10:08:45,752]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:45,752] MyAccount_01_Update_Customer_Info - Step 11: Verify Lastname is updated correctly
-[INFO ] [2022-10-11 10:08:45,805]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:45,805] MyAccount_01_Update_Customer_Info - Step 12: Verify email is updated correctly
-[INFO ] [2022-10-11 10:08:45,854]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:45,854] MyAccount_01_Update_Customer_Info - Step 13: Verify company is updated correctly
-[INFO ] [2022-10-11 10:08:45,907]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:45,907] MyAccount_01_Update_Customer_Info - Step 14: Verify day of birth is updated correctly
-[INFO ] [2022-10-11 10:08:45,965]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:45,965] MyAccount_01_Update_Customer_Info - Step 15: Verify month of birth is updated correctly
-[INFO ] [2022-10-11 10:08:46,046]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:46,046] MyAccount_01_Update_Customer_Info - Step 16: Verify year of birth is updated correctly
-[INFO ] [2022-10-11 10:08:46,083]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:46,084] MyAccount_01_Update_Customer_Info - Step 14: Verify gender is updated correctly to Female
-[INFO ] [2022-10-11 10:08:46,118]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:46,124] MyAccount_02_Update_Address - Step 01: Click on Address link page
-[INFO ] [2022-10-11 10:08:46,824] MyAccount_02_Update_Address - Step 02: Click on ADD NEW button
-[INFO ] [2022-10-11 10:08:47,538] MyAccount_02_Update_Address - Step 03: Input to Firstname textbox a value is: AddFirstname
-[INFO ] [2022-10-11 10:08:47,637] MyAccount_02_Update_Address - Step 04: Input to Lastname textbox a value is: AddLastname
-[INFO ] [2022-10-11 10:08:47,724] MyAccount_02_Update_Address - Step 05: Input to Email textbox a value is: automail1164@gmail.com
-[INFO ] [2022-10-11 10:08:47,814] MyAccount_02_Update_Address - Step 06: Input to Company textbox a value is: ACB
-[INFO ] [2022-10-11 10:08:47,873] MyAccount_02_Update_Address - Step 07: Select a country in dropdown list with value is: United States
-[INFO ] [2022-10-11 10:08:48,180] MyAccount_02_Update_Address - Step 08: Select State/province in dropdown list with value is: California
-[INFO ] [2022-10-11 10:08:48,603] MyAccount_02_Update_Address - Step 09: Input to City textbox a value is: Oakland
-[INFO ] [2022-10-11 10:08:48,678] MyAccount_02_Update_Address - Step 10: Input to Address 1 textbox a value is: 123 No Street
-[INFO ] [2022-10-11 10:08:48,754] MyAccount_02_Update_Address - Step 11: Input to Address 2 textbox a value is: 789 Highway
-[INFO ] [2022-10-11 10:08:48,840] MyAccount_02_Update_Address - Step 12: Input to Zip/postal code textbox a value is: 123456
-[INFO ] [2022-10-11 10:08:48,903] MyAccount_02_Update_Address - Step 13: Input to Phone textbox a value is: 0987654321
-[INFO ] [2022-10-11 10:08:48,970] MyAccount_02_Update_Address - Step 14: Input to Fax textbox a value is: 0123456789
-[INFO ] [2022-10-11 10:08:49,038] MyAccount_02_Update_Address - Step 15: Click on Save button
-[INFO ] [2022-10-11 10:08:49,925] MyAccount_02_Update_Address - Step 16: Verify Address's name Info is correct
-[INFO ] [2022-10-11 10:08:49,994]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:49,994] MyAccount_02_Update_Address - Step 17: Verify Address's emai Info is correct
-[INFO ] [2022-10-11 10:08:50,032]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:50,071] MyAccount_02_Update_Address - Step 18: Verify Address's phone Info is correct
-[INFO ] [2022-10-11 10:08:50,113]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:50,113] MyAccount_02_Update_Address - Step 19: Verify Address's fax Info is correct
-[INFO ] [2022-10-11 10:08:50,153]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:50,153] MyAccount_02_Update_Address - Step 20: Verify Address's company Info is correct
-[INFO ] [2022-10-11 10:08:50,220]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:50,220] MyAccount_02_Update_Address - Step 21: Verify Address's address1 Info is correct
-[INFO ] [2022-10-11 10:08:50,267]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:50,267] MyAccount_02_Update_Address - Step 22: Verify Address's address2 Info is correct
-[INFO ] [2022-10-11 10:08:50,315]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:50,315] MyAccount_02_Update_Address - Step 23: Verify Address's country Info is correct
-[INFO ] [2022-10-11 10:08:50,382]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:50,382] MyAccount_02_Update_Address - Step 24: Verify Address's city, state, zip Info is correct
-[INFO ] [2022-10-11 10:08:50,444]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:50,448] MyAccount_03_Change_Password - Step 01: Click on Change Password link
-[INFO ] [2022-10-11 10:08:51,091] MyAccount_03_Change_Password - Step 02: Input to Old password textbox
-[INFO ] [2022-10-11 10:08:51,189] MyAccount_03_Change_Password - Step 03: Input to New password textbox
-[INFO ] [2022-10-11 10:08:51,267] MyAccount_03_Change_Password - Step 04: Input to Confirm new password textbox
-[INFO ] [2022-10-11 10:08:51,364] MyAccount_03_Change_Password - Step 05: Click on CHANGE PASSWORD button
-[INFO ] [2022-10-11 10:08:51,900] MyAccount_03_Change_Password - Step 06: Verify the change password success message displayed correctly with content 'Password was changed'
-[INFO ] [2022-10-11 10:08:51,976]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:51,977] MyAccount_03_Change_Password - Step 07: Close change password success message
-[INFO ] [2022-10-11 10:08:54,223] MyAccount_03_Change_Password - Step 08: Click on Logout link
-[INFO ] [2022-10-11 10:08:55,201] MyAccount_03_Change_Password - Step 09: Click on Login link
-[INFO ] [2022-10-11 10:08:56,049] MyAccount_03_Change_Password - Step 10: Input to Email textbox on Login page
-[INFO ] [2022-10-11 10:08:56,146] MyAccount_03_Change_Password - Step 11: Input old password on Login page
-[INFO ] [2022-10-11 10:08:56,216] MyAccount_03_Change_Password - Step 12: Click on Login button
-[INFO ] [2022-10-11 10:08:56,881] MyAccount_03_Change_Password - Step 13: Verify unsucces login message displayed wit correct content 'Login was unsuccessful. Please correct the errors and try again.
-No customer account found
-[INFO ] [2022-10-11 10:08:56,950]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:08:56,950] MyAccount_03_Change_Password - Step 14: Input new password on Login page
-[INFO ] [2022-10-11 10:08:57,028] MyAccount_03_Change_Password - Step 15: Click on Login button
-[INFO ] [2022-10-11 10:08:57,963] MyAccount_03_Change_Password - Step 16: Verify My Account link is displayed
-[INFO ] [2022-10-11 10:08:58,058] MyAccount_04_My_Product_Review - Step 01: Click on a product link to view detail
-[INFO ] [2022-10-11 10:08:59,710] MyAccount_04_My_Product_Review - Step 02: Click on 'Add your review' link
-[INFO ] [2022-10-11 10:09:00,544] MyAccount_04_My_Product_Review - Step 03: Input to Review title textbox
-[INFO ] [2022-10-11 10:09:00,660] MyAccount_04_My_Product_Review - Step 04: Input to Review text area
-[INFO ] [2022-10-11 10:09:00,780] MyAccount_04_My_Product_Review - Step 05: 
-[INFO ] [2022-10-11 10:09:00,871] MyAccount_04_My_Product_Review - Step 06: Click on SUBMIT REVIEW button
-[INFO ] [2022-10-11 10:09:01,400] MyAccount_04_My_Product_Review - Step 07: Verify success added review product message displayed with content is 'Product review is successfully added.'
-[INFO ] [2022-10-11 10:09:01,474]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:09:01,475] MyAccount_04_My_Product_Review - Step 08: Click on My account link
-[INFO ] [2022-10-11 10:09:01,965] MyAccount_04_My_Product_Review - Step 09: Click on My Product Review link
-[INFO ] [2022-10-11 10:09:02,918] MyAccount_04_My_Product_Review - Step 10: Verify review title is correct that equal: My Review Product Title
-[INFO ] [2022-10-11 10:09:02,972]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-11 10:09:02,973] MyAccount_04_My_Product_Review - Step 11: Verify review content is correct that equal: This product is rather good with a reasonable price
-[INFO ] [2022-10-11 10:09:03,006]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-17 18:23:46,137] Pre-condition - Step 01: Open browser
+[INFO ] [2022-10-17 18:23:49,892] Pre-condition - Step 02: Click to Register link
+[INFO ] [2022-10-17 18:23:51,110] Pre-condition - Step 03: Select gender radio button that is Male
+[INFO ] [2022-10-17 18:23:51,243] Pre-condition - Step 04: Input to Firstname textbox: Automation
+[INFO ] [2022-10-17 18:23:51,414] Pre-condition - Step 05: Input to Lastname textbox: Testing
+[INFO ] [2022-10-17 18:23:51,563] Pre-condition - Step 06: Select a day of birth in Day dropdown list that has value: 20
+[INFO ] [2022-10-17 18:23:51,685] Pre-condition - Step 07: Select a month of birth in Month dropdown list that has value: October
+[INFO ] [2022-10-17 18:23:51,799] Pre-condition - Step 08: Select a year of birth in Year dropdown list that has value: 1990
+[INFO ] [2022-10-17 18:23:51,914] Pre-condition - Step 09: Input to Email textbox: automail5204@gmail.com
+[INFO ] [2022-10-17 18:23:52,088] Pre-condition - Step 10: Input to Password textbox: Abc@123456
+[INFO ] [2022-10-17 18:23:52,255] Pre-condition - Step 11: Input to ConfirmPassword textbox: Abc@123456
+[INFO ] [2022-10-17 18:23:52,415] Pre-condition - Step 12: Click to Register button
+[INFO ] [2022-10-17 18:23:53,305] Pre-condition - Step 13: Verify success registered message displayed correctly with content is 'Your registration completed'
+[INFO ] [2022-10-17 18:23:53,362]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-17 18:23:53,372] Wishlist_01_Add_To_Wishlist - Step 01: Open Notebook products page
+[INFO ] [2022-10-17 18:23:54,262] Wishlist_01_Add_To_Wishlist - Step 02: Select a product to view detail
+[INFO ] [2022-10-17 18:23:55,534] Wishlist_01_Add_To_Wishlist - Step 03: Click on Add to Wishlist button
+[INFO ] [2022-10-17 18:23:55,666] Wishlist_01_Add_To_Wishlist - Step 04: Verify the result message displays with correct content 'The product has been added to your wishlist'
+[INFO ] [2022-10-17 18:23:56,010]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-17 18:23:56,010] Wishlist_01_Add_To_Wishlist - Step 05: Open Wishlist page
+[INFO ] [2022-10-17 18:23:56,601] Wishlist_01_Add_To_Wishlist - Step 06: Verify the product is displayed correctly on WishList page
+[INFO ] [2022-10-17 18:23:56,660]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-10-17 18:23:56,660] Wishlist_01_Add_To_Wishlist - Step 07: Click to 'Your wishlist URL for sharing:' link
+[INFO ] [2022-10-17 18:23:57,114] Wishlist_01_Add_To_Wishlist - Step 08: Verify title of wishlist share link page contains user name: Automation Testing
+[INFO ] [2022-10-17 18:23:57,168] Wishlist_01_Add_To_Wishlist - Step 09: Open Home Page
+[INFO ] [2022-10-17 18:23:57,737] Wishlist_02_Add_To_Cart_From_Wishlist - Step 01: Open Wishlist page
+[INFO ] [2022-10-17 18:23:58,195] Wishlist_02_Add_To_Cart_From_Wishlist - Step 02: Select 'Add to Cart' checkbox
+[INFO ] [2022-10-17 18:23:58,306] Wishlist_02_Add_To_Cart_From_Wishlist - Step 03: Click on ADD TO CART button
+[INFO ] [2022-10-17 18:23:59,184] Wishlist_02_Add_To_Cart_From_Wishlist - Step 04: Verify the product is added to cart page
+[INFO ] [2022-10-17 18:23:59,236] Wishlist_02_Add_To_Cart_From_Wishlist - Step 05: Open Wishlist page
+[INFO ] [2022-10-17 18:24:00,126] Wishlist_02_Add_To_Cart_From_Wishlist - Step 05: Verify the product was removed from Wishlist page after adding it to Cart page

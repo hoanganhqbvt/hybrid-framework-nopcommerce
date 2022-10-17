@@ -2,6 +2,7 @@ package pageObjects.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.server.handler.interactions.MouseMoveToLocation;
 
 import commons.BasePage;
 import commons.PageGeneratorManager;
@@ -16,6 +17,7 @@ public class UserRegisterPageObject extends BasePage{
 	public void clickToRegisterButton() {
 		waitForElementClickable(driver, RegisterPageUI.REGISTER_BUTTON);
 		clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);
+		
 	}
 
 	public String getErrorMessageAtFirstnameTextbox() {
@@ -116,6 +118,14 @@ public class UserRegisterPageObject extends BasePage{
 		waitForElementVisible(driver, RegisterPageUI.MY_ACCOUNT_LINK);
 		clickToElement(driver, RegisterPageUI.MY_ACCOUNT_LINK);		
 		return PageGeneratorManager.getMyAccountPage(driver);
+	}
+
+	public UserComputerPageObject selectASubmenuByName(String menuName, String submenuName) {
+		waitForElementVisible(driver, RegisterPageUI.DYNAMIC_MENU_HEADER_BY_NAME, menuName);
+		hoverMouseToElement(driver, RegisterPageUI.DYNAMIC_MENU_HEADER_BY_NAME, menuName);
+		waitForElementVisible(driver, RegisterPageUI.DYNAMIC_SUBMENU_BY_NAME, menuName, submenuName);
+		clickToElement(driver, RegisterPageUI.DYNAMIC_SUBMENU_BY_NAME, menuName, submenuName);	
+		return PageGeneratorManager.getUserComputerPage(driver);
 	}
 	
 	

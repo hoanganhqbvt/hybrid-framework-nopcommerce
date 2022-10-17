@@ -1,6 +1,7 @@
 package com.nopcommerce.user;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -115,4 +116,9 @@ public class Login extends BaseTest{
 			log.info("Login_04_Login_With_Registered_Email_And_Correct_Password - Step 04: Verify user login successfully");
 			verifyTrue(userHomePage.isMyAccountLinkDisplayed());
 		}
+		
+		@AfterClass(alwaysRun = true)
+		public void afterClass() {
+		driver.quit();
+}
 }

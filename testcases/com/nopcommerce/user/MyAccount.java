@@ -1,6 +1,7 @@
 package com.nopcommerce.user;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -304,5 +305,9 @@ public void MyAccount_04_My_Product_Review() {
 	verifyEquals(userMyProductReviewPage.getReviewContentInMyProductReviewPage(), reviewText);
 	
 	
+}
+@AfterClass(alwaysRun = true)
+public void afterClass() {
+driver.quit();
 }
 }
