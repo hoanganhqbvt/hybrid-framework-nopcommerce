@@ -2,45 +2,52 @@ package javaOOP;
 
 import java.util.Scanner;
 
-public class Topic_01_Class_Object_Student {
+  public class Topic_01_Class_Object_Student {
 	private int studentID;
 	private String studentName;
 	private float theoryPoint;
 	private float practicePoint;		
 	static Scanner scanner = new Scanner(System.in);
 	
-	private int getStudentID() {
+	public int getStudentID() {
 		return studentID;
 	}
-	private void setStudentID(int studentID) {
+	public void setStudentID(int studentID) {
 		this.studentID = studentID;
 	}
-	private String getStudentName() {
+	public String getStudentName() {
 		return studentName;
 	}
-	private void setStudentName(String studentName) {
+	public void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
-	private double getTheoryPoint() {
+	public double getTheoryPoint() {
 		return theoryPoint;
 	}
-	protected void setTheoryPoint(float theoryPoint) {
-		this.theoryPoint = theoryPoint;
-	}
-	private double getPracticePoint() {
+	public void setTheoryPoint(float theoryPoint) {
+		if(theoryPoint >=0) {
+			this.theoryPoint = theoryPoint;
+		} else { System.out.println("The enter theory point is invalid");
+			}
+		}
+	
+	public double getPracticePoint() {
 		return practicePoint;
 	}
-	private void setPracticePoint(float practicePoint) {
+	public void setPracticePoint(float practicePoint) {
+		if(practicePoint >=0) {
 		this.practicePoint = practicePoint;
+	} else { System.out.println("The enter practice point is invalid");
+		}
 	}
-	private float getAveragePoint() {
+	public float getAveragePoint() {
 		 return (this.theoryPoint + this.practicePoint * 2) / 3;
 	}
-	private void showStudentInfo() {
+	public void showStudentInfo() {
 		System.out.println("Student's ID is: " + getStudentID());
 		System.out.println("Student's name is: " + getStudentName());
-		System.out.println("Student's name is: " + getTheoryPoint());
-		System.out.println("Student's name is: " + getPracticePoint());
+		System.out.println("Student's theory Point is: " + getTheoryPoint());
+		System.out.println("Student's practice Point is: " + getPracticePoint());
 		System.out.println("Student's average point is: " + getAveragePoint());
 	}
 	public static void main(String[] args) {

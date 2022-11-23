@@ -10,14 +10,17 @@
    <test name="Run on Chrome">
 
 <parameter name ="userURL" value = "https://demo.nopcommerce.com" />
+<parameter name ="adminURL" value = "https://admin-demo.nopcommerce.com" />
   <parameter name = "browser" value="chrome" />
  <classes>
-     <!--  <class name="com.nopcommerce.user.Register"/>
-      <class name="com.nopcommerce.user.Login"/>-->
+     <!--  <class name="com.nopcommerce.user.Register"/>-->
+      <class name="com.nopcommerce.user.Login"/>
      <!--  <class name="com.nopcommerce.user.MyAccount"/>-->
       <!-- <class name="com.nopcommerce.user.Search_Advanced_Search"/>-->
       <!-- <class name="com.nopcommerce.user.Sort_Display_Paging"/>-->
-      <class name="com.nopcommerce.user.Wishlist_Compare_RecentView"/>
+     <!--  <class name="com.nopcommerce.user.Wishlist_Compare_RecentView"/>-->
+     <!--  <class name="com.nopcommerce.user.Order"/>-->
+     <!--  <class name="com.nopcommerce.admin.Admin"/>-->
  </classes>
   </test> 
 

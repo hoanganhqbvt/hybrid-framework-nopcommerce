@@ -2,18 +2,24 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjects.nopCommerce.admin.AdminCustomerPageObject;
 import pageObjects.nopCommerce.admin.AdminDashboardPageObject;
 import pageObjects.nopCommerce.admin.AdminLoginPageObject;
+import pageObjects.nopCommerce.admin.AdminProductPageObject;
 import pageObjects.nopCommerce.user.UserAddressPageObject;
 import pageObjects.nopCommerce.user.UserChangePasswordPageObject;
 import pageObjects.nopCommerce.user.UserComputerPageObject;
 import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
+import pageObjects.nopCommerce.user.CheckoutPageObject;
+import pageObjects.nopCommerce.user.CompareProductListPageObject;
 import pageObjects.nopCommerce.user.CustomerInfoPO;
 import pageObjects.nopCommerce.user.ProductDetailPageObject;
+import pageObjects.nopCommerce.user.RecentlyViewProductPageObject;
 import pageObjects.nopCommerce.user.ShoppingCarPageObject;
 import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
+import pageObjects.nopCommerce.user.UserOrderPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
 import pageObjects.nopCommerce.user.UserSearchPageObject;
@@ -88,6 +94,24 @@ public class PageGeneratorManager {
 	
 	public static ShoppingCarPageObject getShoppingCartPage(WebDriver driver) {
 		return new ShoppingCarPageObject(driver);
+	}
+	public static CompareProductListPageObject getCompareProductListPage(WebDriver driver) {
+		return new CompareProductListPageObject(driver);
+	}
+	public static RecentlyViewProductPageObject getRecentlyViewProductPage(WebDriver driver) {
+		return new RecentlyViewProductPageObject(driver);
+	}
+	public static CheckoutPageObject getCheckoutPage(WebDriver driver) {
+		return new CheckoutPageObject(driver);
+	}
+	public static UserOrderPageObject getOrderPage(WebDriver driver) {
+		return new UserOrderPageObject(driver);
+	}
+	public static AdminProductPageObject getadminProductPage(WebDriver driver) {
+		return new AdminProductPageObject(driver);
+	}
+	public static AdminCustomerPageObject getadminCustomerPage(WebDriver driver) {
+		return new AdminCustomerPageObject(driver);
 	}
 	
 }

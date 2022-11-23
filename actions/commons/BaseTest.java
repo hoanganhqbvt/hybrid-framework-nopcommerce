@@ -1,6 +1,7 @@
 package commons;
 
 import java.io.File;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Random;
@@ -217,8 +218,11 @@ public class BaseTest {
 		return pass;
 	}
 	public int generateFakeNumber() {
-		 Random randomNumber = new Random();
-		 return randomNumber.nextInt(9999);
+		Random randomNumber = new Random();
+		return randomNumber.nextInt(9999);
+	}
+	public long getRandomNumberByDateTime() {		
+		 return Calendar.getInstance().getTimeInMillis();
 	 }
 	
 }

@@ -1,6 +1,8 @@
 package javaBasic;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import org.testng.annotations.Test;
 
@@ -111,6 +113,7 @@ public class Topic_10_Array {
 		 System.out.println("age: " + age);
 		 System.out.println("score: " + score);
 	 }
+
 	 public static void main(String[] args) {
 		 Topic_10_Array[] students = new Topic_10_Array[3];
 		 students[0] = new Topic_10_Array("Anh", 123, 23, 10);
@@ -120,9 +123,21 @@ public class Topic_10_Array {
 		 for (int i = 0; i < 3; i++) {
 			 students[i].display();
 		 }
-		 			 }
- 
- 
+		 		
+		 int a[] = {1, 2, 3};
+		 int b[] = {5, 1, 2};
+		 boolean isEqual = false;
+		 for(int i=0; i<3; i++) {
+			 
+			 if(a[i] != b[i]) {
+				 System.out.println(a[i] );
+				 System.out.println(b[i]);
+				 isEqual = false;
+			 } else { isEqual = true;
+		 }  
+		 
+	 }System.out.println(isEqual);
+	 
+	 } 
 }
-
 

@@ -26,7 +26,7 @@
 	<classpathentry exported="true" kind="lib" path="lib_WebDriverManager/webdrivermanager-4.2.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="libLog4J/log4j-1.2.16.jar"/>
 	<classpathentry exported="true" kind="lib" path="libSelenium/commons-logging-1.2.jar" sourcepath="libSelenium/commons-logging-1.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="libSelenium/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="libSelenium/selenium-server-standalone-3.141.59.jar" sourcepath="libSelenium/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="libSelenium/testng-6.14.3.jar" sourcepath="libSelenium/testng-6.14.3-sources.jar"/>
 	<classpathentry kind="lib" path="libSelenium/commons-logging-1.2-javadoc.jar"/>
 	<classpathentry kind="lib" path="libReportNG/guice-3.0.jar"/>
@@ -43,6 +43,9 @@
 	<classpathentry kind="lib" path="libExtentV5/lombok-1.18.12.jar"/>
 	<classpathentry kind="lib" path="libExtentV5/reactive-streams-1.0.3.jar"/>
 	<classpathentry kind="lib" path="libExtentV5/rxjava-3.0.4.jar"/>
+	<classpathentry kind="lib" path="libJackson/jackson-annotations-2.10.0.jar"/>
+	<classpathentry kind="lib" path="libJackson/jackson-core-2.10.0.jar"/>
+	<classpathentry kind="lib" path="libJackson/jackson-databind-2.10.0.jar"/>
 	<classpathentry exported="true" kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

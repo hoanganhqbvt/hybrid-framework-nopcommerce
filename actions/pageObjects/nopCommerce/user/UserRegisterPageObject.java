@@ -2,8 +2,6 @@ package pageObjects.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.server.handler.interactions.MouseMoveToLocation;
-
 import commons.BasePage;
 import commons.PageGeneratorManager;
 import pageUIs.nopCommerce.user.RegisterPageUI;

@@ -64,10 +64,13 @@ return isProductDisplayed;
 		clickToElement(driver, WishlistPageUI.HOME_PAGE_ICON);
 	}
 
-	public boolean isProductRemovedFromWishlistAfterAddingItToCartPage(String productName) {
+	public boolean isProductRemovedFromWishlist(String productName) {
 		boolean isProductRemoved = false;
 		if(isElementUndisplayed(driver, WishlistPageUI.PRODUCT_NAME_ON_WISHLIST_PAGE)) {
-			isProductRemoved = true;
+			waitForElementVisible(driver, WishlistPageUI.WISHLIST_EMPTY_MESSAGE);
+			if(getElementText(driver, WishlistPageUI.WISHLIST_EMPTY_MESSAGE).equals("\n"
+					+ "The wishlist is empty!")) {
+			isProductRemoved = true;}
 		} else {
 		List<WebElement> productNameOnWishlist = getListWebElement(driver, WishlistPageUI.PRODUCT_NAME_ON_WISHLIST_PAGE);
 		for(WebElement aProductName : productNameOnWishlist) {
@@ -78,4 +81,27 @@ return isProductDisplayed;
 	} 			
 		}return isProductRemoved;
 }
+
+	public void clickToAddToWishlistButtonByProductName(String productName) {
+		waitForElementClickable(driver, WishlistPageUI.ADD_TO_WISHLIST_BUTTON_BY_PRODUCT_NAME, productName);
+		clickToElement(driver, WishlistPageUI.ADD_TO_WISHLIST_BUTTON_BY_PRODUCT_NAME, productName);
+	}
+
+	public void removeProductFromWishlist(String productName) {
+		waitForElementClickable(driver, WishlistPageUI.REMOVE_ICON_BY_PRODUCT_NAME, productName);
+		clickToElement(driver, WishlistPageUI.REMOVE_ICON_BY_PRODUCT_NAME, productName);		
+	}
+
+	public String getResultMessageAfterClickOnOverviewButtons() {
+		waitForElementVisible(driver, WishlistPageUI.SUCCESS_ADD_TO_WISHLIST_COMPARE_MESSAGE);
+		return getElementText(driver, WishlistPageUI.SUCCESS_ADD_TO_WISHLIST_COMPARE_MESSAGE);		
+	}
+
+	public void clickToAddToCompareButtonByProductName(String productName) {
+		waitForElementClickable(driver, WishlistPageUI.ADD_TO_COMPARE_BUTTON_BY_PRODUCT_NAME, productName);
+		clickToElement(driver, WishlistPageUI.ADD_TO_COMPARE_BUTTON_BY_PRODUCT_NAME, productName);		
+	}
+	
+	
+	
 }

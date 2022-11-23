@@ -1,31 +1,29 @@
-[INFO ] [2022-10-17 18:23:46,137] Pre-condition - Step 01: Open browser
-[INFO ] [2022-10-17 18:23:49,892] Pre-condition - Step 02: Click to Register link
-[INFO ] [2022-10-17 18:23:51,110] Pre-condition - Step 03: Select gender radio button that is Male
-[INFO ] [2022-10-17 18:23:51,243] Pre-condition - Step 04: Input to Firstname textbox: Automation
-[INFO ] [2022-10-17 18:23:51,414] Pre-condition - Step 05: Input to Lastname textbox: Testing
-[INFO ] [2022-10-17 18:23:51,563] Pre-condition - Step 06: Select a day of birth in Day dropdown list that has value: 20
-[INFO ] [2022-10-17 18:23:51,685] Pre-condition - Step 07: Select a month of birth in Month dropdown list that has value: October
-[INFO ] [2022-10-17 18:23:51,799] Pre-condition - Step 08: Select a year of birth in Year dropdown list that has value: 1990
-[INFO ] [2022-10-17 18:23:51,914] Pre-condition - Step 09: Input to Email textbox: automail5204@gmail.com
-[INFO ] [2022-10-17 18:23:52,088] Pre-condition - Step 10: Input to Password textbox: Abc@123456
-[INFO ] [2022-10-17 18:23:52,255] Pre-condition - Step 11: Input to ConfirmPassword textbox: Abc@123456
-[INFO ] [2022-10-17 18:23:52,415] Pre-condition - Step 12: Click to Register button
-[INFO ] [2022-10-17 18:23:53,305] Pre-condition - Step 13: Verify success registered message displayed correctly with content is 'Your registration completed'
-[INFO ] [2022-10-17 18:23:53,362]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-17 18:23:53,372] Wishlist_01_Add_To_Wishlist - Step 01: Open Notebook products page
-[INFO ] [2022-10-17 18:23:54,262] Wishlist_01_Add_To_Wishlist - Step 02: Select a product to view detail
-[INFO ] [2022-10-17 18:23:55,534] Wishlist_01_Add_To_Wishlist - Step 03: Click on Add to Wishlist button
-[INFO ] [2022-10-17 18:23:55,666] Wishlist_01_Add_To_Wishlist - Step 04: Verify the result message displays with correct content 'The product has been added to your wishlist'
-[INFO ] [2022-10-17 18:23:56,010]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-17 18:23:56,010] Wishlist_01_Add_To_Wishlist - Step 05: Open Wishlist page
-[INFO ] [2022-10-17 18:23:56,601] Wishlist_01_Add_To_Wishlist - Step 06: Verify the product is displayed correctly on WishList page
-[INFO ] [2022-10-17 18:23:56,660]  -------------------------- PASSED -------------------------- 
-[INFO ] [2022-10-17 18:23:56,660] Wishlist_01_Add_To_Wishlist - Step 07: Click to 'Your wishlist URL for sharing:' link
-[INFO ] [2022-10-17 18:23:57,114] Wishlist_01_Add_To_Wishlist - Step 08: Verify title of wishlist share link page contains user name: Automation Testing
-[INFO ] [2022-10-17 18:23:57,168] Wishlist_01_Add_To_Wishlist - Step 09: Open Home Page
-[INFO ] [2022-10-17 18:23:57,737] Wishlist_02_Add_To_Cart_From_Wishlist - Step 01: Open Wishlist page
-[INFO ] [2022-10-17 18:23:58,195] Wishlist_02_Add_To_Cart_From_Wishlist - Step 02: Select 'Add to Cart' checkbox
-[INFO ] [2022-10-17 18:23:58,306] Wishlist_02_Add_To_Cart_From_Wishlist - Step 03: Click on ADD TO CART button
-[INFO ] [2022-10-17 18:23:59,184] Wishlist_02_Add_To_Cart_From_Wishlist - Step 04: Verify the product is added to cart page
-[INFO ] [2022-10-17 18:23:59,236] Wishlist_02_Add_To_Cart_From_Wishlist - Step 05: Open Wishlist page
-[INFO ] [2022-10-17 18:24:00,126] Wishlist_02_Add_To_Cart_From_Wishlist - Step 05: Verify the product was removed from Wishlist page after adding it to Cart page
+[INFO ] [2022-11-14 09:46:39,107] Pre-condition - Step 01: Open browser
+[INFO ] [2022-11-14 09:46:43,185] Pre-condition - Step 02: Click to Login link menu
+[INFO ] [2022-11-14 09:46:44,824] Login_01_Login_With_Empty_Data - Step 01: Click to Login button without input data
+[INFO ] [2022-11-14 09:46:44,982] Login_01_Login_With_Empty_Data - Step 02: Verify the error message displayed with the correct content is: 'Please enter your email'
+[INFO ] [2022-11-14 09:46:45,062]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-14 09:46:45,067] Login_02_Login_With_Invalid_Email - Step 01: Input an invalid email to Email textbox
+[INFO ] [2022-11-14 09:46:45,282] Login_02_Login_With_Invalid_Email - Step 02: Click to Login button
+[INFO ] [2022-11-14 09:46:45,391] Login_02_Login_With_Invalid_Email - Step 03: Verify error message displayed correctly with content is 'Wrong email'
+[INFO ] [2022-11-14 09:46:45,460]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-14 09:46:45,464] Login_03_Login_With_Unregistered_Email - Step 01: Input unregistered email to Email textbox
+[INFO ] [2022-11-14 09:46:45,627] Login_03_Login_With_Unregistered_Email - Step 02: Click to Login button
+[INFO ] [2022-11-14 09:46:46,134] Login_03_Login_With_Unregistered_Email - Step 03: Verify error message displayed correctly with content is 'Login was unsuccessful. Please correct the errors and try again.
+No customer account found'
+[INFO ] [2022-11-14 09:46:46,242]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-14 09:46:46,248] Login_04_Login_With_Registered_Email_But_Without_Password - Step 01: Input a registered email to Email textbox
+[INFO ] [2022-11-14 09:46:46,437] Login_04_Login_With_Registered_Email_But_Without_Password - Step 02: Click to Login button
+[INFO ] [2022-11-14 09:46:46,975] Login_04_Login_With_Registered_Email_But_Without_Password - Step 03: Verify error message displayed correctly with content is 'Login was unsuccessful. Please correct the errors and try again.
+The credentials provided are incorrect'
+[INFO ] [2022-11-14 09:46:47,065]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-11-14 09:46:47,227] Login_04_Login_With_Registered_Email_But_Wrong_Password - Step 01: Input a registered email to Email textbox
+[INFO ] [2022-11-14 09:46:47,411] Login_04_Login_With_Registered_Email_But_Wrong_Password - Step 02: Input wrong password to Password textbox
+[INFO ] [2022-11-14 09:46:47,576] Login_04_Login_With_Registered_Email_But_Wrong_Password - Step 03: Click to Login button
+[INFO ] [2022-11-14 09:46:48,047] Login_04_Login_With_Registered_Email_But_Wrong_Password - Step 04: Verify error message displayed correctly with content is 'Login was unsuccessful. Please correct the errors and try again.
+The credentials provided are incorrect'
+[INFO ] [2022-11-14 09:46:48,133]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-11-14 09:46:48,280] Login_04_Login_With_Registered_Email_And_Correct_Password - Step 01: Input a registered email to Email textbox
+[INFO ] [2022-11-14 09:46:48,500] Login_04_Login_With_Registered_Email_And_Correct_Password - Step 02: Input correct password to Password textbox
+[INFO ] [2022-11-14 09:46:48,740] Login_04_Login_With_Registered_Email_And_Correct_Password - Step 03: Click to Login button
+[INFO ] [2022-11-14 09:46:49,197] Login_04_Login_With_Registered_Email_And_Correct_Password - Step 04: Verify user login successfully

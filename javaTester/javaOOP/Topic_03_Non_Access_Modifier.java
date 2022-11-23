@@ -1,6 +1,6 @@
 package javaOOP;
 
-public class Topic_03_Non_Access_Modifier {
+public class Topic_03_Non_Access_Modifier extends Topic_02_Overloading{
 	
 	// static: varial/ method
 	// dùng cho tất cả các instance/ object
@@ -26,5 +26,14 @@ public class Topic_03_Non_Access_Modifier {
 		System.out.println(topic.colorCar);
 		
 	}
+	static double plusMethod(double x, double y) {
+		System.out.println("overriding");
+		return x + y;
+	}
+	
+	@Override
+	public void test(String browserName) {
+		this.browserName = browserName;
+	} 
 
 }
